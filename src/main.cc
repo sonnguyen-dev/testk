@@ -249,8 +249,8 @@ void get_blob_from_block_template(const Nan::FunctionCallbackInfo<v8::Value>& ar
   if (!res)
     return THROW_ERROR_EXCEPTION("Unable to parse block");
 
-  if (extra.size())
-    b.miner_tx.extra.push_back(extra);
+  //if (extra.size())
+  //  b.miner_tx.extra.push_back(extra);
 
   b.nonce = nonce_val;
 

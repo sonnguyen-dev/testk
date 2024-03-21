@@ -51,7 +51,7 @@
         "-fno-rtti"
       ],
       "cflags_cc": [
-        "-std=c++17",
+        "-std=c++0x",
         "-fexceptions",
         "-frtti"
       ],

@@ -196,8 +196,8 @@ void get_hash_from_block_template_with_extra(const Nan::FunctionCallbackInfo<v8:
   if (!res)
     return THROW_ERROR_EXCEPTION("Unable to parse block");
 
-  if (extra.size())
-    b.miner_tx.extra.push_back(extra);
+  //if (extra.size())
+  //  b.miner_tx.extra.push_back(extra);
 
   crypto::hash h = currency::get_block_header_mining_hash(b);
 

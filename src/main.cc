@@ -323,7 +323,6 @@ NAN_MODULE_INIT(init) {
     Nan::Set(target, Nan::New("get_blob_from_block_template").ToLocalChecked(), Nan::GetFunction(Nan::New<FunctionTemplate>(get_blob_from_block_template)).ToLocalChecked());
     Nan::Set(target, Nan::New("get_id_hash").ToLocalChecked(), Nan::GetFunction(Nan::New<FunctionTemplate>(get_id_hash)).ToLocalChecked());
     Nan::Set(target, Nan::New("is_address_valid").ToLocalChecked(), Nan::GetFunction(Nan::New<FunctionTemplate>(is_address_valid)).ToLocalChecked());
-
 }
 
 NODE_MODULE(cryptonote, init)
